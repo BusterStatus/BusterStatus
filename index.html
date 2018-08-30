@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Top 9 Movies</title>
+  <link rel="stylesheet" href="styles.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<header><h1>T9 - A Top 9 Movies and Television Tool</h1 >
+</header>
+<body>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
+
+
+
+  <div id="query">
+    <H3>  
+    <!-- Genre Source: https://developers.themoviedb.org/3/genres/get-movie-list -->
+    <select id="media">
+      <option value="">SELECT MEDIA TYPE</option>
+      <option value="Movie">Movies</option>
+      <option value="Television">Television</option>
+    </select>
+    <select id="genre">
+      <option value="">SELECT GENRE</option>
+      <option value="">All Genres</option>
+      <option value="28">Action</option>
+      <option value="12">Adventure</option>
+      <option value="16">Animation</option>
+      <option value="35">Comedy</option>
+      <option value="80">Crime</option>
+      <option value="99">Documentary</option>
+      <option value="18">Drama</option>
+      <option value="10751">Family</option>
+      <option value="14">Fantasy</option>
+      <option value="36">History</option>
+      <option value="27">Horror</option>
+      <option value="10402">Music</option>
+    </select> 
+  <input type="text" id="year" placeholder="ENTER RELEASE YEAR" /> 
+    <button type="button" id="button">SEARCH</button>
+  </h3>
+  </div>
+
+  <div id="wrapper">
+<div id="outer"></div>
+<div id="outer2"></div>
+</div>
+
+  <div id="movies">
+    <a style="text-decoration: none"><img id="movieImg0" src="http://www.kevingage.com/assets/clapboard.png" onclick="afterPosterClicked0()"/></a>
+    <a style="text-decoration: none"><img id="movieImg1" src="http://www.kevingage.com/assets/clapboard.png" onclick="afterPosterClicked1()"/></a>
+    <a style="text-decoration: none"><img id="movieImg2" src="http://www.kevingage.com/assets/clapboard.png" onclick="afterPosterClicked2()"/></a>
+    <a style="text-decoration: none"><img id="movieImg3" src="http://www.kevingage.com/assets/clapboard.png" onclick="afterPosterClicked3()"/></a>
+    <a style="text-decoration: none"><img id="movieImg4" src="http://www.kevingage.com/assets/clapboard.png" onclick="afterPosterClicked4()"/></a>
+    <a style="text-decoration: none"><img id="movieImg5" src="http://www.kevingage.com/assets/clapboard.png" onclick="afterPosterClicked5()"/></a>
+    <a style="text-decoration: none"><img id="movieImg6" src="http://www.kevingage.com/assets/clapboard.png" onclick="afterPosterClicked6()"/></a>
+    <a style="text-decoration: none"><img id="movieImg7" src="http://www.kevingage.com/assets/clapboard.png" onclick="afterPosterClicked7()"/></a>
+    <a style="text-decoration: none"><img id="movieImg8" src="http://www.kevingage.com/assets/clapboard.png" onclick="afterPosterClicked8()"/></a>
+  </div>
+
+  <footer>
+    <p>T9 POWERED BY</p>
+<a href="https://www.themoviedb.org/"><img id="logo" src="https://www.themoviedb.org/assets/1/v4/logos/primary-green-d70eebe18a5eb5b166d5c1ef0796715b8d1a2cbc698f96d311d62f894ae87085.svg" /></a>
+  </footer>
+</body>
+</html>
